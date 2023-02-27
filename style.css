@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background: rgb(214, 193, 193);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+
+}
+
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 20s infinite forwards linear;
+
+}
+
+.imagem {
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+    
+}
+
+.imagem span {
+    margin: auto;
+    font-size: 1em;
+
+}
+
+@keyframes rotate360 {
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1) {
+    background-image: url(https://www.stockvault.net/data/2020/01/24/272793/preview16.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2) {
+    background-image: url(https://www.shutterstock.com/image-illustration/globe-internet-connecting-600w-354890426.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(3) {
+    background-image: url(https://www.shutterstock.com/image-photo/hot-tub-middle-beautiful-winter-600w-2231692921.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(4) {
+    background-image: url(https://images.pexels.com/photos/4108659/pexels-photo-4108659.jpeg?auto=compress&cs=tinysrgb&w=600);
+    transform: rotateY(120deg) translateZ(430px);
+
+
+}
+.imagem:nth-child(5) {
+    background-image: url(https://images.pexels.com/photos/2481177/pexels-photo-2481177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    transform: rotateY(160deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(6) {
+    background-image: url(https://media.istockphoto.com/id/1144557228/pt/foto/telecommunication-network-above-city-wireless-mobile-internet-technology-for-smart-grid-or-5g.jpg?s=612x612&w=is&k=20&c=6LNa3hYc-k1c6SvTrkBLsyQ_O87Em4bdlGbxUSz1Dr4=);
+    transform: rotateY(200deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(7) {
+    background-image: url(https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&w=600);
+    transform: rotateY(240deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(8) {
+    background-image: url(https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=600);
+    transform: rotateY(280deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(9) {
+    background-image: url(https://images.pexels.com/photos/7663144/pexels-photo-7663144.jpeg?auto=compress&cs=tinysrgb&w=600);
+    transform: rotateY(320deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(10) {
+    background-image: url(https://media.istockphoto.com/id/1195693425/pt/foto/man-hands-holding-blue-earth-and-global-networking-connection-and-data-exchanges-global.jpg?s=1024x1024&w=is&k=20&c=VHngxVskbUcArNQqFg_EkrKf_MtoZOWUd0kfTXb2E3I=);
+    transform: rotateY(360deg) translateZ(430px);
+
+}
+
+
+
+
+
+
+
+
+
